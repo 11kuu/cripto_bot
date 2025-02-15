@@ -77,7 +77,7 @@ def realizar_venda(codigo_ativo, valor_usd, ativo_operado):
     except Exception as e:
         print(f"Erro inesperado: {e}")
 
-# Escolher a moeda de venda
+
 codigo_operado = input("Digite o par de moedas para venda (ex: IOTAUSDT): ").upper()
 ativo_operado = ''.join([c for c in codigo_operado if not c.isdigit() and c != 'U'])
 valor_venda = float(input("Digite o valor em USDT para cada venda: "))
